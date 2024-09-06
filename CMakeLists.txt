@@ -1,7 +1,25 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.10)
 
 project(water)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory(src)
+set(water_src
+  src/main.cpp
+)
+
+message("water src: ${water_src}")
+
+add_executable(water 
+  ${water_src}
+)
+
+
+find_package(fmt CONFIG REQUIRED)
+find_package(pugixml CONFIG REQUIRED)
+
+target_link_libraries(water PUBLIC 
+  fmt::fmt
+  pugixml::shared pugixml::pugixml
+)
+
