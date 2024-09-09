@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 
     if (argc < 1)
     {
-        fmt::print("water browser - v0.1.0\nusage: water <file/url to a website or a HTML page> ");
+        fmt::print("water browser - v0.1.1\nusage: water <file/url to a website or a HTML page> ");
         return -1;
     }
     else

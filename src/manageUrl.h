@@ -5,5 +5,4 @@
 
 std::string getOsName();
 
-
 using namespace httpp;
