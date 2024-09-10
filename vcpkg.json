@@ -1,7 +1,8 @@
 {
   "dependencies": [
+    "curl",
     "fmt",
     "pugixml",
-    "curl"
+    "ftxui"
   ]
 }

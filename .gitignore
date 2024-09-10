@@ -453,4 +453,45 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/cmake,c++,visualstudio
 
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+CMakeUserPresets.json
+
+.vscode/
+*.code-workspace
+/buildtrees/
+/build*/
+/downloads/
+/installed*/
+/vcpkg_installed*/
+/packages/
+/scripts/buildsystems/tmp/
+#ignore custom triplets
+/triplets/*
+#add vcpkg-designed triplets back in
+!/triplets/arm-uwp.cmake
+!/triplets/arm64-windows.cmake
+!/triplets/x64-linux.cmake
+!/triplets/x64-osx.cmake
+!/triplets/x64-uwp.cmake
+!/triplets/x64-windows-static.cmake
+!/triplets/x64-windows.cmake
+!/triplets/x86-windows.cmake
+
+!/triplets/community
+!/triplets/community/**
+
+*.exe
+*.zip
+
+
 out/
